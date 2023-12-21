@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой Калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Калькулятор</h1>
+    <input type="number" name="number-1" id="number1" value="0">
+    <input type="number" name="number-2" id="number2" value="0">
+    <div class="btn-wrapper">
+      <button id="plusBtn" class="plus-btn">
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 12H18M12 6V18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button id="minusBtn" class="minus-btn">
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 12L18 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button id="multBtn" class="multiplication-btn">
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6L18 18M18 6L6 18" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button id="divBtn" class="division-btn">
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 3L8 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <button id="calcBtn" class="calculate-btn">Вычислить</button>
+    <div class="result-wrapper">
+      <h2>Результат:</h2>
+      <p class="calculation-result" id="result"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
